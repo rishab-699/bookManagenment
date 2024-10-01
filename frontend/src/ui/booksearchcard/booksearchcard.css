@@ -1,0 +1,114 @@
+.Booksearchcard{
+    margin: auto;
+    margin-top: 20px;
+    padding: 16px;
+    border: none;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cardHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardHeading{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+.cardHeadingTitle{
+    font-size: 28px;
+    font-weight: 700;
+}
+.leftSec{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    & .refreshBtn{
+        background: none;
+        border: none;
+        cursor: pointer;
+        & .refreshIcon{
+            color: rgb(102, 102, 102);
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}
+.cardBody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & table{
+        padding: 10px;
+        & thead{
+            background-color: rgb(245, 245, 245);
+            border: none;
+            & tr{
+                border: none;
+                & th{
+                    font-size: 20px;
+                    padding: 10px;
+                    min-width: 40px;
+                    &:nth-child(3){
+                        & .time{
+                            font-size: 12px;
+                            color: rgb(94, 94, 94);
+                            margin-left: 10px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        & tbody{
+            & tr{
+                border-bottom: 2px solid black;
+                & td{
+                    font-size: 16px;
+                    padding: 10px 50px;
+                }
+            }
+        }
+    }
+    & .cardfooter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        & .recordsManagement{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            & .recordsNumber{
+                font-size: 16px;
+                padding: 8px;
+                width: fit-content;
+            }
+        }
+        & .pagination{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            & .paginationBTN{
+                background: none;
+                border: none;
+                cursor: pointer;
+                & .paginationIcon{
+                    font-size: 20px;
+                    color: rgb(63, 63, 63);
+                    &:hover{
+                        color: black
+                    }
+                }
+            }
+            & span{
+                font-size: 20px;
+            }
+        }
+    }
+}

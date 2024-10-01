@@ -1,0 +1,27 @@
+.SearchInput{
+    border: 1px solid black;
+    border-radius: 8px;
+    & form{
+        display: flex;
+        align-items: center;
+        & .searchInput{
+        font-size: 16px;
+        padding: 5px;
+        border: none;
+            &:focus{
+                outline: none;
+            }
+        }
+        & .searchBtn{
+            background: rgb(240, 240, 240);
+            padding: 10px;
+            border: none;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            cursor: pointer;
+            &:hover{
+                background: rgb(226, 226, 226);;
+            }
+        }
+    }
+}

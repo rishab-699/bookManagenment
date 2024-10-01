@@ -1,0 +1,43 @@
+.Home{
+    position: relative;
+    height: calc(100vh);
+}
+.bookTransactions{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    & .ActionBtns{
+        font-size: 28px;
+        padding: 8px 16px;
+        border: none;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        &:nth-child(1){
+            background-color: rgb(20, 42, 168);
+            
+            color: white;
+            &:hover{
+                background-color: rgb(16, 32, 126);
+
+            }
+        }
+        &:nth-child(2){
+            background-color: rgb(20, 168, 20);
+            color: white;
+            &:hover{
+                background-color: rgb(16, 143, 16);
+            }
+        }
+        &:nth-child(3){
+           
+            background-color: rgb(168, 20, 102);
+            color: white;
+            &:hover{
+                background-color: rgb(155, 18, 93);
+            }
+        }
+
+    }
+}

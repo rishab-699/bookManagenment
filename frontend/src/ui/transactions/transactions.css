@@ -1,0 +1,115 @@
+.transactions{
+    margin: auto;
+    margin-top: 20px;
+    padding: 16px;
+    border: none;
+    width: fit-content;
+    min-width: 60%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    & .header{
+        & .heading{
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            & span{
+                font-size: 28px;
+                font-weight: 700;
+            }
+
+        }
+        & .sec{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        & .leftSec{
+            & form{
+                display: flex;
+                gap: 12px;
+                & .inputContainer{
+                    display: flex;
+                    flex-direction: column;
+                    & label{
+                        font-size: 16px;
+                    }
+                    & input{
+                        font-size: 16px;
+                    }
+                }
+                & .submitBtn{
+                    padding: 5px 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: white;
+                    background-color: rgb(1, 1, 179);
+                    border: none;
+                    border-radius: 8px;
+                }
+            }
+        }
+    }
+    & .topSection{
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+        & .countCard{
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding: 12px;
+            border: none;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 12px;
+            & .title{
+                font-size: 18px;
+                font-weight: 700;
+
+            }
+            & .value{
+                font-size: 28px;
+                font-weight: 700;
+            }
+        }
+    }
+    & .cardbody{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        & table{
+            padding: 10px;
+            & thead{
+                background-color: rgb(228, 227, 227);
+                border: none;
+                & tr{
+                    border: none;
+                    & th{
+                        font-size: 20px;
+                        padding: 10px;
+                        min-width: 40px;
+                        &:nth-child(3){
+                            & .time{
+                                font-size: 12px;
+                                color: rgb(94, 94, 94);
+                                margin-left: 10px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+            }
+            & tbody{
+                & tr{
+                    border-bottom: 2px solid black;
+                    & td{
+                        font-size: 16px;
+                        padding: 10px 50px;
+                    }
+                }
+            }
+        }
+    }
+}
